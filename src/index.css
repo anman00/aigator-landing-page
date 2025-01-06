@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased overflow-x-hidden;
+}
+
+.feature-carousel {
+  padding: 50px 0;
+  height: 500px;
+  overflow: visible !important;
+}
+
+.feature-carousel .swiper-wrapper {
+  align-items: center;
+  display: flex;
+  transition-timing-function: linear !important;
+}
+
+.feature-carousel .swiper-slide {
+  /* transition: all 300ms ease; */
+  opacity: 0.4;
+  display: flex;
+  justify-content: center;
+  height: 425px;
+
+  /* transform: scale(1,1); */
+  /* transform-origin: center center; */
+}
+
+.feature-carousel .swiper-slide-active {
+  opacity: 1;
+  height: 500px;
+  position: relative;
+  transition: height 0.25s linear;
+
+  /* margin-left: 50px;
+  margin-right: 50px !important; */
+  /* margin: 0 60px 0 20px; */
+  /* transform: scale(1,1.2); */
+}
+
+.feature-carousel .swiper-slide-prev,
+.feature-carousel .swiper-slide-next {
+  opacity: 0.8;
+  height: 450px;
+
+  transition: height 0.25s linear;
+}
+
+.swiper-pagination-bullet {
+  @apply bg-white/50 !important;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-white !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply text-white/70 hover:text-white transition-colors !important;
+}
+
+.swiper-button-disabled {
+  @apply opacity-30 !important;
+}
+
+#root::before {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 250%;
+  opacity: 0.44;
+  background-image: url('./assets/blur.png');
+  background-repeat: repeat;
+}
+
+@media only screen and (max-width: 600px) {
+  #root::before {
+   height: 500%;
+  }
+}
