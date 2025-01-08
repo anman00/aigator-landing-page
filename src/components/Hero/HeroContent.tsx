@@ -13,15 +13,19 @@ export const HeroContent = () => {
         Your Gateway To The World's Best AI Models
       </h1>
       <p className="text-white/90 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-        Discover, compare, and access cutting-edge AI tools with Algator - the smarter way to harness AI
+        Discover, compare, and access cutting-edge AI tools with AI Gator - the smarter way to harness AI
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
+       <a href="#waitlist">
         <button className="bg-gradient-to-r from-[#FD8151] to-[#FF00E5] text-white px-8 py-3 rounded-xl hover:bg-opacity-90 transition-all font-medium">
-          Beta Coming Soon...
-        </button>
+            Beta Coming Soon...
+          </button>
+       </a>
+        <a href="#waitlist">
         <button className="bg-white bg-opacity-20  text-white px-8 py-3 rounded-xl hover:bg-white hover:text-[#9C3FE4] transition-all font-medium">
           Join waitlist
         </button>
+        </a>
       </div>
     </div>
   );

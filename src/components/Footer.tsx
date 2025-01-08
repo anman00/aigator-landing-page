@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import BlueBg from '../assets/blue-bg.png';
 import { Mail } from 'lucide-react';
+import LogoLight from '../assets/logo-white.png'
+
 
 export const Footer = () => {
   const [email, setEmail] = useState('');
@@ -100,7 +102,11 @@ export const Footer = () => {
           </div>
         </div>
         <div className="flex border-t border-white pt-8 flex-col-reverse flex-start md:flex-row justify-between items-center pb-8">
-          <div className="min-w-[120px] text-2xl font-bold my-4 md:my-0">✧ Algator</div>
+         
+        <div className="text-white text-2xl font-bold flex items-center justify-center gap-2">
+          <img src={LogoLight} alt="" className='h-[42px] w-[42px]' />
+          <h1> AI Gator</h1>
+        </div>
           <div className="flex gap-6 flex-col md:flex-row text-center w-full">
             {/* <a href="#" className="bg-white/10 w-full p-2 rounded-xl hover:bg-white/50 transition-colors">
               Terms & Conditions

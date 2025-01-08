@@ -1,7 +1,7 @@
 import React from 'react';
 import BlackBg from '../../assets/black-bg.png';
 
-export const WhyAlgatorBackground = () => (
+export const WhyAIgatorBackground = () => (
   <div className="absolute inset-0">
     {/* <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a] to-[#2a1a3a]" /> */}
     {/* <div className="absolute inset-0 bg-cover bg-center opacity-5" style={{backgroundImage:  }} /> */}

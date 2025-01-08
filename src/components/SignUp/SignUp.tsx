@@ -21,7 +21,7 @@ export const SignUp = () => {
           <img src={BlueBg} className='absolute w-full h-full' />
          <div className="relative p-8">
          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Be the First to Experience Algator
+            Be the First to Experience AI Gator
           </h2>
           <p className="text-xl text-white/90">
             Sign up for early access and get exclusive entry to our beta testing program.

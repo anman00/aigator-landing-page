@@ -1,8 +1,8 @@
 import { useInView } from 'react-intersection-observer';
-import { WhyAlgatorFeature } from './WhyAlgatorFeature';
-import { whyAlgatorFeatures } from './whyAlgatorData';
+import { whyAIgatorFeatures } from './whyAIgatorData';
+import { WhyAIgatorFeature } from './WhyAIgatorFeature';
 
-export const WhyAlgatorContent = () => {
+export const WhyAIgatorContent = () => {
   const { ref, inView } = useInView({
     threshold: 0.1,
     triggerOnce: true
@@ -14,7 +14,7 @@ export const WhyAlgatorContent = () => {
     }`}>
       <div className="mb-12">
         <span className='text-md text-[#838DFF]'>
-             Why Algator?
+             Why AI Gator?
         </span>
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 max-w-[450px]">
         AI Gator simplifies AI selection and usage by offering:
@@ -26,8 +26,8 @@ export const WhyAlgatorContent = () => {
       </div>
       
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-        {whyAlgatorFeatures.map((feature, index) => (
-          <WhyAlgatorFeature key={index} {...feature} />
+        {whyAIgatorFeatures.map((feature, index) => (
+          <WhyAIgatorFeature key={index} {...feature} />
         ))}
       </div>
       

@@ -11,7 +11,7 @@ interface FeatureCardProps {
 export const FeatureCard = ({ title, description, icon: Icon, image }: FeatureCardProps) => (
   <div className="relative group">
     {/* <div className="absolute inset-0 bg-gradient-to-r from-purple-500/30 to-blue-500/30 rounded-2xl blur-xl transition-all duration-300 group-hover:blur-2xl" /> */}
-    <div className="relative rounded-2xl p-4 border bg-white border-white/20 w-[300px] md:min-w-[400px] hover:border-white/40 transition-all h-full">
+    <div className="relative rounded-2xl p-4 border bg-white border-white/20 w-[350px] h-[85vh] md:h-full md:min-w-[400px] hover:border-white/40 transition-all h-full">
       <div className="w-full h-[50%] mb-6 rounded-xl overflow-hidden">
         <img 
           src={image} 
