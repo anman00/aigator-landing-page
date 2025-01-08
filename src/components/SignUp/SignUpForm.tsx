@@ -78,18 +78,19 @@ export function SignUpForm() {
           />
         </div>
 
-        <div className="relative">
-          <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/70 pointer-events-none" />
-          <select 
-            name="aiUseCase"
-            required
-            className="w-full px-4 py-3 rounded-lg bg-white/10 text-white focus:outline-none focus:ring-2 focus:ring-white/50 border border-white/20 appearance-none"
-          >
-            <option value="">What would you use AI for?</option>
-            <option value="development">Development</option>
-            <option value="design">Design</option>
-            <option value="marketing">Marketing</option>
-          </select>
+        <div className="relative group">
+        <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/70 pointer-events-none" />
+        <select
+          name="aiUseCase"
+          required
+          className="w-full px-4 py-3 rounded-lg bg-white/10 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 border border-white/20 appearance-none hover:border-white/70"
+        >
+          <option value="" className="text-white/70">What would you use AI for?</option>
+          <option value="development">Development</option>
+          <option value="design">Design</option>
+          <option value="marketing">Marketing</option>
+          <option value="other">Other</option>
+        </select>
         </div>
       </div>
 
