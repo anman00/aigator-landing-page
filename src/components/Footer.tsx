@@ -111,7 +111,7 @@ export const Footer = () => {
             {/* <a href="#" className="bg-white/10 w-full p-2 rounded-xl hover:bg-white/50 transition-colors">
               Terms & Conditions
             </a> */}
-            <a href="mailto:hello@aigator.xyz" className="min-w-[180px] mb-2 md: mb-0 bg-white/10 w-1/5 mb:ml-10 p-2 rounded-xl hover:bg-white/50 transition-colors">
+            <a href="mailto:hello@aigator.xyz" className="min-w-[180px] mb-2 md:mb-0 bg-white/10 w-1/5 mb:ml-10 p-2 rounded-xl hover:bg-white/50 transition-colors">
               Contact Us
             </a>
             {/* <a href="#" className="bg-white/10 w-full p-2 rounded-xl hover:bg-white/50 transition-colors">
