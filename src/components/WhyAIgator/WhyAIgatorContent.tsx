@@ -25,7 +25,11 @@ export const WhyAIgatorContent = () => {
         </p>
       </div>
       
+      <h2 className="text-3xl mt-20 md:text-4xl font-bold text-white mb-8 max-w-[450px]">
+        What's Cooking!!
+        </h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        
         {whyAIgatorFeatures.map((feature, index) => (
           <WhyAIgatorFeature key={index} {...feature} />
         ))}

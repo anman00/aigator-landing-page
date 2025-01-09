@@ -9,17 +9,17 @@ export function SignUpForm() {
     event.preventDefault();
     setIsSubmitting(true);
     setMessage(null);
-  
+
     const form = event.currentTarget;
     const formData = new FormData(form);
-  
+
     try {
       const name = formData.get('name')?.toString() || '';
       const email = formData.get('email')?.toString() || '';
       const aiUseCase = formData.get('aiUseCase')?.toString() || '';
-  
+
       const APPS_SCRIPT_URL = import.meta.env.VITE_FORM_URL || "";
-  
+
       const response = await fetch(APPS_SCRIPT_URL, {
         method: 'POST',
         headers: {
@@ -28,11 +28,11 @@ export function SignUpForm() {
         body: JSON.stringify({ name, email, aiUseCase }),
         redirect: "follow",
       });
-  
+
       if (!response.ok) {
         throw new Error('Failed to send data to the server');
       }
-  
+
       const result = await response.json();
       if (result.success) {
         setMessage({ text: 'Signed up successfully!', isError: false });
@@ -55,7 +55,7 @@ export function SignUpForm() {
         <p className="opacity-60">
           Sign up for early access and get exclusive entry to our beta testing program.
         </p>
-        
+
         <div className="relative">
           <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/70" />
           <input
@@ -78,33 +78,32 @@ export function SignUpForm() {
           />
         </div>
 
-        <div className="relative group">
-        <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/70 pointer-events-none" />
-        <select
-          name="aiUseCase"
-          required
-          className="w-full px-4 py-3 rounded-lg bg-white/10 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 border border-white/20 appearance-none hover:border-white/70"
-        >
-          <option value="" className="text-white/70">What would you use AI for?</option>
-          <option value="development">Development</option>
-          <option value="design">Design</option>
-          <option value="marketing">Marketing</option>
-          <option value="other">Other</option>
-        </select>
+        <div className="relative">
+          <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/70 pointer-events-none" />
+          <select
+            name="aiUseCase"
+            required
+            className="w-full px-4 py-3 rounded-lg bg-white/10 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 border border-white/20 appearance-none cursor-pointer"
+          >
+            <option value="" className="text-white/70">What would you use AI for?</option>
+            <option value="development">Development</option>
+            <option value="design">Design</option>
+            <option value="marketing">Marketing</option>
+            <option value="other">Other</option>
+          </select>
         </div>
       </div>
 
       {message && (
-        <div 
-          className={`p-3 rounded-lg ${
-            message.isError ? 'bg-red-500/20 text-red-200' : 'bg-green-500/20 text-green-200'
-          }`}
+        <div
+          className={`p-3 rounded-lg ${message.isError ? 'bg-red-500/20 text-red-200' : 'bg-green-500/20 text-green-200'
+            }`}
         >
           {message.text}
         </div>
       )}
 
-      <button 
+      <button
         type="submit"
         disabled={isSubmitting}
         className="w-full bg-white text-[#9C3FE4] py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all disabled:opacity-70 flex items-center justify-center"
