@@ -8,7 +8,7 @@ import Feature5 from '../../assets/feature-5.png'
 export const featuresData = [
   {
     title: 'Your Personal AI Matchmaker',
-    description: 'Ai Gator’s Smart Router ensures your prompts are handled by the most suitable AI model. Whether it’s text-to-text, image generation, or audio synthesis, our router dynamically assigns tasks for optimal results.',
+    description: 'AI Gator’s Smart Router ensures your prompts are handled by the most suitable AI model. Whether it’s text-to-text, image generation, or audio synthesis, our router dynamically assigns tasks for optimal results.',
     icon: Bot,
     image: Feature1
   },
@@ -27,7 +27,7 @@ export const featuresData = [
   },
   {
     title: 'Smart Routing Technology',
-    description: 'Ai Gator’s Smart Router ensures your prompts are handled by the most suitable AI model. Whether it’s text-to-text, image generation, or audio synthesis, our router dynamically assigns tasks for optimal results.',
+    description: 'AI Gator’s Smart Router ensures your prompts are handled by the most suitable AI model. Whether it’s text-to-text, image generation, or audio synthesis, our router dynamically assigns tasks for optimal results.',
     icon: Languages,
     image: Feature4
 
