@@ -85,11 +85,11 @@ export function SignUpForm() {
             required
             className="w-full px-4 py-3 rounded-lg bg-white/10 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 border border-white/20 appearance-none cursor-pointer"
           >
-            <option value="" className="text-white/70">What would you use AI for?</option>
-            <option value="development">Development</option>
-            <option value="design">Design</option>
-            <option value="marketing">Marketing</option>
-            <option value="other">Other</option>
+            <option value="" className="text-black">What would you use AI for?</option>
+            <option value="development" className='text-black'>Development</option>
+            <option value="design" className='text-black'>Design</option>
+            <option value="marketing"className='text-black'>Marketing</option>
+            <option value="other"className='text-black'>Other</option>
           </select>
         </div>
       </div>
