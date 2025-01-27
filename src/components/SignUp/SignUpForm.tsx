@@ -96,7 +96,7 @@ export function SignUpForm() {
 
       {message && (
         <div
-          className={`p-3 rounded-lg ${message.isError ? 'bg-red-500/20 text-red-200' : 'bg-green-500/20 text-green-200'
+          className={`p-3 rounded-lg ${message.isError ? 'bg-red-500/20 text-red-100' : 'bg-green-500/20 text-green-100'
             }`}
         >
           {message.text}
@@ -106,7 +106,7 @@ export function SignUpForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full bg-white text-[#9C3FE4] py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all disabled:opacity-70 flex items-center justify-center"
+        className="w-full bg-white text-[#457DF3] py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all disabled:opacity-70 flex items-center justify-center"
       >
         {isSubmitting ? (
           <>

@@ -68,7 +68,7 @@ export const Footer = () => {
             </p>
           </div>
           <div className="flex">
-            <form onSubmit={handleSubmit} className="w-full md:mx-auto mt-4 md:mt-auto">
+            <form onSubmit={handleSubmit} className="w-full md:mx-auto mt-4 md:mt-auto md:w-[250px]">
               <div className="flex flex-col gap-4">
                 <div className="relative">
                   <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/70" />
@@ -84,19 +84,19 @@ export const Footer = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="bg-white text-[#457DF3] px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors"
+                  //w-full bg-white text-[#457DF3] py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all disabled:opacity-70 flex items-center justify-center
+                  className="bg-white text-[#457DF3] py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all disabled:opacity-70 flex items-center justify-center"
                 >
                   {isSubmitting ? 'Subscribing...' : 'Subscribe'}
                 </button>
               </div>
               {message && (
-                <p
-                  className={`mt-4 ${
-                    message.isError ? 'text-red-500' : 'text-green-500'
-                  }`}
+                <div
+                  className={`mt-2 p-3 rounded-lg ${message.isError ? 'bg-red-500/20 text-red-100' : 'bg-green-500/20 text-green-100'
+                    }`}
                 >
                   {message.text}
-                </p>
+                </div>
               )}
             </form>
           </div>
